@@ -72,3 +72,48 @@ footer {
     background-color: #f0f0f0;
      padding: 10px;
       margin-top: 5px; }
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 768px) {
+    body {
+        min-width: auto; /* Rimuovi min-width fissa per mobile */
+    }
+    
+    header h1 {
+        font-size: 1.5em; /* Riduci dimensione titolo */
+    }
+    
+    header h2 {
+        font-size: 1.2em;
+    }
+    
+    .buttons {
+        flex-direction: column; /* Stack verticale su mobile */
+        gap: 15px;
+    }
+    
+    .column {
+        flex-direction: row; /* Orizzontale per colonne su mobile */
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .button-link,
+    button {
+        width: 100%; /* Pulsanti a larghezza piena */
+        max-width: 200px; /* Limita larghezza massima */
+        padding: 20px 10px; /* Aumenta padding per touch */
+        font-size: 1.1em; /* Testo leggermente più grande */
+    }
+    
+    .logo {
+        height: 60px; /* Logo leggermente più grande */
+        width: 60px;
+        margin: 10px 0;
+    }
+    
+    footer {
+        padding: 15px 10px; /* Più padding su mobile */
+        text-align: center;
+    }
+}
