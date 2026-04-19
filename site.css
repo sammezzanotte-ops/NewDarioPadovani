@@ -9,16 +9,23 @@ body {
      padding: 0;
      min-height: 100vh;
      min-width: 100vh;
+     display: -webkit-flex;
      display: flex;
+     -webkit-flex-direction: column;
      flex-direction: column; }
 header { 
      padding: 20px; }
-.buttons { display: flex;
+.buttons { display: -webkit-flex;
+     display: flex;
+     -webkit-justify-content: center; 
      justify-content: center; 
+     -webkit-align-items: center;
      align-items: center;
       gap: 10px; 
       margin: 20px 0; }
-.column { display: flex; 
+.column { display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: column;
     flex-direction: column;
      gap: 10px; }
 .button-link,
@@ -35,10 +42,14 @@ button {
     font-style: italic;
     font-weight: 600;
     white-space: nowrap;
+    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     text-decoration: none;
+    display: -webkit-inline-flex;
     display: inline-flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
