@@ -47,8 +47,8 @@ button {
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     text-decoration: none;
-    display: -webkit-inline-flex;
-    display: inline-flex;
+    display: -webkit-flex;
+    display: flex;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: center;
